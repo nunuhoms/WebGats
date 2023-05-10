@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Baskerville;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: lightblue;
+}
+
+.header h1 {
+  font-size: 50px;
+
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: royalblue;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: hotpink;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: lightsteelblue;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: lightblue;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+<a name="inicii"></a>
+<div class="header">
+  <h1>La vida secreta dels gats</h1>
+  <p>Universitat Rovira Virgili</p>
+  <a title="inici" href="index2.html"><img src="imatges/logo.gif" height="90px" alt="inici" /></a>
+</div>
+
+<div class="topnav">
+ <a href="./races.htm" target="_blank">Les races</a>
+  <a href="#cuidarungat">Cuidar un gat</a>
+  <a href="#rutesgatunes">Rutes gatunes</a>
+  <a href="#sobrenosaltres" style="float:right">Sobre nosaltres</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+	  <a name="cuidarungat"></a>
+      <h2>Cuidar un gat</h2>
+      <h5>Darrera actualizació, abril de 2023</h5>
+ 	  <img src="imatges/atencions.gif" height="200px">
+      <p>Cuidar un gat, es bastant senzill..., en primer lloc, tenir la sorra sempre ben neta i en un lloc accessible, tenir aigua que no tingui cal al seu abast, una font amb una boma es una bona opció, si el gat surt al carrer, tenir les pipetes al dia, així com les vacunes, i un cop l'any fer una revisó al veterinari.</p>
+    </div>
+    <div class="card">
+	   <a name="rutesgatunes"></a>
+      <h2>Llocs de interés</h2>
+     <div>
+     	<iframe width="100%" height="500px" frameborder="0" sctolling="no" marginheight="0" marginwidth="0" src="file:///C:/Users/artur/Desktop/Web%20Nuria/Web%20Nuria/qgis2web_2023_05_09-16_57_03_799867/index.html"></iframe>
+     </div>
+      <p>En el mapa superior podem observar en poligons de color vermell les tendes on trobem els articles nessesàris per cuidar un gat, amb la qualificació sobre 5 segons els usuaris de Google.</p>
+      <p>Els poligos verds representen els veterinaris amb la seva qualificació dels usuaris, en estrelles segons Google.</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+	  <a name="sobrenosaltres"></a>
+      <h2>Sobre Nosaltres</h2>
+
+      <p>Som una organització sense aním de lucre</p>
+
+
+ <footer>
+
+<div class="footer-box">
+<p class=MsoNormal>&nbsp;</p>
+<div class="footer">
+
+  <a title="insta" href="https://instagram.com/shti_supremacy?igshid=YmMyMTA2M2Y="><img src="imatges/R.png"height="90px" alt="inici" /></a>
+
+ <form action="submit-form.php" method="POST">
+  <label for="name">Nom:</label>
+  <input type="text" id="name" name="name" required><br><br>
+
+  <label for="email">Correu electronic:</label>
+  <input type="email" id="email" name="email" required><br><br>
+
+  <label for="message">Misatge:</label>
+  <textarea id="message" name="message" required></textarea><br><br>
+
+  <input type="submit" value="Enviar">
+</form>
+</footer>
+ </td>
+ </tr>
+</table>
+
+<p class=MsoNormal>&nbsp;</p>
+<div class="footer">
+
+<a href="#inicii"><img src="imatges/feche.png"height="90px" alt="inici" /></a>
+</body>
+</html>
